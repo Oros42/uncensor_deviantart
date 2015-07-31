@@ -12,3 +12,14 @@ Go on a deviantart.com censor page like http://smirtouille.deviantart.com/art/Ba
 Click on your new bookmarks and normaly, the censored image will be show.  
   
 If you got a problem send me a mail at oros [at] ecirtam.net (in french or english)
+  
+  
+Update 2015/07/31
+-----------------
+  
+Now deviantart.com use the cookie "agegate_state" with the value "1".  
+So this code works :  
+```
+javascript:(function(){document.cookie="agegate_state=1";window.location.reload();})();
+```
+But if you have disabled cookie, uncensor_deviantart.js can works with old pictures (post before 2015/??/??)  .
